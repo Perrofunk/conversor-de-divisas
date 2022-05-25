@@ -47,9 +47,18 @@ form h2{
     margin:5px;
 }
 #submit {
-    width:150px; height:40px; margin-top:10px; font-size: 110%; border: none;
+    width:150px;
+    height:40px;
+    margin-top:10px;
+    font-size: 110%;
+    border: none;
     color: black;
     background-color: gold;
     text-decoration: none;
     cursor: pointer;
+}
+#placeholder {
+    max-width:400px;
+    font-size:110%;
+    color:red;
 }
