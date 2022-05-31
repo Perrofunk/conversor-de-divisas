@@ -7,9 +7,7 @@ body {
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* font-family: -apple-system,BlinkMacSystemFont,Segoe UI, -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; */
 }
-.page-title {
-    position:sticky;
-    top:0;
+.header {
     margin:-8px;
     text-align: center;
     background-color:rgb(85, 0, 0);
@@ -19,21 +17,17 @@ body {
     border-bottom: 1px solid gold;
 }
 .form-wrapper {
-    display:block;
-    margin:auto;
-    text-align:center;
-    padding-bottom:25px;
-    padding-top:25px;
+    display:flex;
+    margin:-8px;
+    text-align:left;
+    background-color:rgb(55, 0, 0);
+    align-items: center;
+    justify-content: center;
+    
 }
 #conversor{
     display:inline-block;
-    background-color:rgb(55, 0, 0);
     text-align:left;
-    margin-left: auto;
-    margin-right: auto;
-    padding:20px;
-    border: 1px solid gold;
-    border-radius: 2%;
     font-size:130%;
 }
 form h2{
@@ -60,5 +54,6 @@ form h2{
 #placeholder {
     max-width:400px;
     font-size:110%;
-    color:red;
+    color:white;
+    margin-left:30px;
 }

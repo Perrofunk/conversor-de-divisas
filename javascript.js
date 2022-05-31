@@ -96,7 +96,9 @@ Esto se debe a que se usa el metodo isNaN(), que chequea si el argumento brindad
 
   if (isNaN(resultadoFinal(div1, div2, can))){
     document.getElementById("resultado").innerHTML = resultadoFinal(div1, div2, can);
+    document.getElementById("resultado-header").innerHTML = "";
   } else {
+    document.getElementById("resultado-header").innerHTML = "Resultado:"
     document.getElementById("resultado").innerHTML = `Convertir ${can} ${divisa(div1, can)} a ${divisa(div2, can)} da como resultado: ${resultadoFinal(div1, div2, can)} ${divisa(div2, resultadoFinal(div1, div2, can))}`;
     
         };

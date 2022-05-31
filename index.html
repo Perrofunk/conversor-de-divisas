@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Conversor de Divisas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 class="header">Convertir dinero</h1>
+  <p style="text-align:center;font-size:larger;">Actualmente, se admiten solo peso y dolar.</p>
+
+  <main>
+  <div class="form-wrapper">
+    <form id="conversor">
+      <h2>Conversor</h2>
+      <div class="field">
+        <label for="divisaconvertir"></label>
+        <input class="form-input" list="divisasDisponibles" type="text" id="divisa1" name="divisaconvertir" placeholder="Divisa a convertir" value="">
+        <datalist id="divisasDisponibles">
+          <option value="Peso">
+          <option value="Dolar">
+        </datalist>
+      </div>
+      <div class="field">
+        <label for="divisafinal"></label>
+        <input class="form-input" list="divisasDisponibles" type="text" id="divisa2" name="divisafinal" placeholder="Divisa a la que queres convertir" value="">
+        <datalist id="divisasDisponibles">
+          <option value="Peso">
+          <option value="Dolar">
+        </datalist>
+      </div>
+      <div class="field">
+        <label for="cantidad"></label>
+        <input class="form-input" type="text" id="cantidad" name="cantidad" placeholder="Especifica el monto a convertir" value="">
+      </div>
+
+      <div class="field" style="text-align:center;">
+        <button id="submit" type="button" onclick="convertirDivisas()">Convertir</button>
+      </div>
+    </form>
+    <div id="placeholder">
+      <h2 id="resultado-header"></h2>
+      <p id="resultado"></p>
+    </div>    
+  </div>
+  </main>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
